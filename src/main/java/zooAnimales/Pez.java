@@ -29,7 +29,7 @@ public class Pez extends Animal {
 	}
 	
 	
-	public static Pez crearBacalaos(String nombre,int edad,String genero ){
+	public static Pez crearBacalao(String nombre,int edad,String genero ){
 		bacalaos ++;
 		return  new Pez(nombre, edad, "oceano", genero, "gris", 6);
 	}
@@ -51,7 +51,9 @@ public class Pez extends Animal {
 	public void setCantidadAletas(int cantidadAletas) {
 		this.cantidadAletas = cantidadAletas;
 	}
-	
+	public String movimiento() {
+		return "nadar";
+	}
 	
 	
 }
