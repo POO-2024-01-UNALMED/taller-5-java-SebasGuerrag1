@@ -10,7 +10,6 @@ public class Pez extends Animal {
 	private int cantidadAletas;
 	
 	public Pez() {
-		totalAnimales ++;
 		listado.add (this);
 	}
 	public Pez(String nombre, int edad, String habitad, String genero, String colorEscamas, int cantidadAletas) {
@@ -34,12 +33,25 @@ public class Pez extends Animal {
 		bacalaos ++;
 		return  new Pez(nombre, edad, "oceano", genero, "gris", 6);
 	}
-	
+	public static ArrayList<Pez> getListado() {
+		return listado;
+	}
+	public static void setListado(ArrayList<Pez> listado) {
+		Pez.listado = listado;
+	}
 	public String getColorEscamas() {
 		return colorEscamas;
 	}
-	public int getcantidadAletas() {
+	public void setColorEscamas(String colorEscamas) {
+		this.colorEscamas = colorEscamas;
+	}
+	public int getCantidadAletas() {
 		return cantidadAletas;
 	}
+	public void setCantidadAletas(int cantidadAletas) {
+		this.cantidadAletas = cantidadAletas;
+	}
+	
+	
 	
 }
