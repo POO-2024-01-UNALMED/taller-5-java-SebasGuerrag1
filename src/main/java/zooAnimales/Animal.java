@@ -8,7 +8,7 @@ public class Animal {
 	private int edad;
 	private String habitad;
 	private String genero;
-	private Zona[] zona;
+	private Zona zona;
 	
 	public Animal(){
 		totalAnimales ++;
@@ -88,11 +88,11 @@ public class Animal {
 		this.genero = genero;
 	}
 
-	public Zona[] getZona() {
+	public Zona getZona() {
 		return zona;
 	}
 
-	public void setZona(Zona[] zona) {
+	public void setZona(Zona zona) {
 		this.zona = zona;
 	}
 	
